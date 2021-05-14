@@ -2,7 +2,7 @@ from math import floor
 
 from ruamel.std.zipfile import InMemoryZipFile
 from zipfile import ZipFile
-from libraries.slpp import dcsslpp as lua
+from .libraries.slpp import dcsslpp as lua
 from datetime import datetime
 
 WRITEACCESS_ERROR = 'This file is write-protected!'
