@@ -98,7 +98,7 @@ class MIZFile(object):
         if self.projection:
             pass
         else:
-            self.projection = Proj("+proj=utm +zone="+self.getProjectionData()['utmzone']+",+"+self.getProjectionData()['hemi']+" +ellps=WGS84 +datum=WGS84 +units=m +no_defs")
+            self.projection = Proj("+proj=utm +zone="+self.getProjectionData()['utmzone']+" +"+self.getProjectionData()['hemi']+" +ellps=WGS84 +datum=WGS84 +units=m +no_defs")
         return self.projection
 
     def getProjectedXY(self, lat, lon):
